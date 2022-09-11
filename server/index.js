@@ -4,7 +4,6 @@ const app = express()
 const port = 3000
 const csvjson =require("csvjson")
 
-let value = "web-developement"
 app.get('/getSkill:set', (req, res) => {
     value = req.params.set
     res.send("Ok")
@@ -40,7 +39,7 @@ app.get('/', async (req, res) => {
     await runPy().then( (fromRunpy) => {
         console.log(fromRunpy);
         const jsonObj=csvjson.toObject(fromRunpy.toString())
-        res.status(200).json({a:value,data:jsonObj });
+        res.status(200).json({data:jsonObj });
 
 
     }).catch(err => {
