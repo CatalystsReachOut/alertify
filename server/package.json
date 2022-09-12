@@ -1,0 +1,26 @@
+{
+  "name": "alertify-server",
+  "version": "1.0.0",
+  "description": "server to host scrapping script for alertify",
+  "main": "index.js",
+  "scripts": {
+    "install": "npm install && pip install -r {requirements.txt}",
+    "dev": "nodemon index.js",
+    "start": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "nodejs",
+    "python",
+    "react"
+  ],
+  "author": "priyansh, prakash, darshan",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "csvjson": "^5.1.0",
+    "csvtojson": "^2.0.10",
+    "express": "^4.18.1"
+  },
+  "python": {}
+}
